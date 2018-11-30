@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<style>
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+
+</style>
+<head>
+<meta charset="utf-8">
+<link rel= "stylesheet" type="text/css" href="style.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet">
+<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+<h1 id="styling"> MULTIMEDIA PROJECT </h1>
+<hr style="padding:0.5%;">
+<h2 id="stylin"> 
+        French Language  Top </h2>
+</head>
+</body>
+
+<div id="color-image">
+<img class="pic" src="/videos/runner.gif"
+alt="C:\Users\DIANA\Downloads\funny cat.gif" onclick="zoomPic(this)"  >
+
+<img class="picbig" src="/videos/runner.gif"
+  alt="C:\Users\DIANA\Downloads\funny cat.gif" >
+  
+  
+  <p style="font-size:18pt; height:25px; color:#400713;font-family:ar hermann;"> 
+     <strong> <u> This shows a motion picture.</u> </strong><br> </p> 
+	  
+   <p style="font-size:16pt;color:#400713; font-family:ar hermann;"> To zoom to a bigger image, 
+        <br> point the cursor to the small image.<br> </p>
+		</div>
+		
+		
+
+   <div style="text-align:center">
+  <button
+ onclick="playPause()">play/pause</button>
+ 
+ <button
+ onclick="makeBig()">zoom in</button>
+ 
+ <button
+ onclick="makeSmall()">zoom out</button>
+ 
+ <button
+ 
+ onclick="makeNormal()">Normal</button>
+
+ <br></br>
+ <video id="video1" width="420"  controls>
+   <source src="/videos/Project Multimedia 2_Small (1).mp4"
+ type="video/mp4">
+   </video>
+
+ </div>
+    <script>
+
+var myVideo=
+document.getElementById("video1");
+
+function playPause(){
+if (myVideo.paused)
+    myVideo.play();
+else
+    myVideo.pause();
+}
+function makeBig()	{
+    myVideo.width=860;
+} 
+function makeSmall() {
+    myVideo.width=220;
+}
+function makeNormal() {
+ myVideo.width=420
+}
+</script>
+
+   
+				
+
+  <div class="contact-form">
+  
+   <h3 style=" font-family:ar hermann; font-size:16pt; text-align:center;"> 
+    Please leave a comment below </h3>	
+<form id="contact-form" method="post" action="">
+<input name="name" type="text" class="form-control"
+   placeholder="Your Name" required> <br>
+   
+<textarea name="comment" class="form-control"
+   placeholder="Comment" rows="4" required></textarea><br>
+   
+   <input type="submit" class="form-control submit" 
+         value="SEND MESSAGE">
+</form>
+ 
+<h4 style="font-family:ar hermann; font-size:16pt; padding:15pt;"> You can share this on:</h4>	
+<ul id="icons">
+<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+</ul>	
+	</div>
+	
+	
+
+
+</body>
+</html>
